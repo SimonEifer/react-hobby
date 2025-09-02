@@ -6,6 +6,7 @@ import {
 	faCog,
 	faUsers,
 	faInfoCircle,
+	faClock,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Sidebar = ({ setActiveContent }) => {
@@ -19,6 +20,11 @@ const Sidebar = ({ setActiveContent }) => {
 			label: "Statistics",
 			icon: faChartLine,
 			onClick: () => setActiveContent("statistics"),
+		},
+		{
+			label: "Timetracking",
+			icon: faClock,
+			onClick: () => setActiveContent("timetracking"),
 		},
 		{
 			label: "Employees",

@@ -7,12 +7,13 @@ import Employees from "../dashboard/employees/employees";
 import Appearance from "../dashboard/appearance";
 import Preferences from "../dashboard/preferences";
 import Info from "../dashboard/info";
+import Timetracking from "../dashboard/timetracking/timetracking";
 
 const MainPage = () => {
 	const [activeContent, setActiveContent] = React.useState("dashboard");
 
 	return (
-		<div className="flex h-full w-full bg-neutral-300">
+		<div className="flex h-full w-full bg-neutral-200">
 			<Sidebar setActiveContent={setActiveContent} />
 			<div className="flex-1 flex flex-col">
 				<Header />
@@ -22,6 +23,7 @@ const MainPage = () => {
 							<Dashboard user={"Simon"} />
 						)}
 						{activeContent === "statistics" && <Statistics />}
+						{activeContent === "timetracking" && <Timetracking />}
 						{activeContent === "employees" && <Employees />}
 						{activeContent === "appearance" && <Appearance />}
 						{activeContent === "info" && <Info />}
