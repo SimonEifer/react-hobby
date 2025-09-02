@@ -1,10 +1,10 @@
-import "./App.css";
+import MainPage from "./components/mainpage/mainPage";
 
 function App() {
 	return (
-		<>
-			<div className="bg-amber-400 text-4xl font-bold">test</div>
-		</>
+		<div className="h-screen w-screen">
+			<MainPage />
+		</div>
 	);
 }
 

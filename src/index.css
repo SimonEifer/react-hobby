@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@font-face {
+	font-family: Manrope;
+	src: url(../src/assets/fonts/Manrope-Regular.ttf);
+}
+
+@theme {
+	--font-manrope: Manrope, "sans-serif";
+	--color-primary-900: #0f1a4c;
+	--color-primary-800: #1a1f3c;
+	--color-primary-700: #2b2f6c;
+	--color-primary-600: #3d4a9a;
+	--color-primary-500: #1d2685; /* primary default color always 500 */
+	--color-primary-400: #4e5bff;
+	--color-primary-300: #7a8eff;
+	--color-primary-200: #a6b3ff;
+	--color-primary-100: #d2d8ff;
+}
